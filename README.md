@@ -3,7 +3,7 @@ Zabawa programowaniem.
 
 ## Kompilacja
 
-  $ gprbuild
+    $ gprbuild
 
 ## Uruchomienie
 
@@ -11,11 +11,11 @@ W pliku `world_1` znajduje się przykładowy świat (`#` oznacza ścianę, ` ` p
 
 Wykonaj polecenie:
 
-  $ ./pledge
+    $ ./pledge
 
 ## Usunięcie zbędnych plików
 
 Wykonaj polecenie:
 
-  $ gprclean
+    $ gprclean
   
