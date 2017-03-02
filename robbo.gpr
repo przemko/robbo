@@ -1,0 +1,6 @@
+project Robbo is
+
+   for Main use ("pledge.adb");
+
+end Robbo;
+
