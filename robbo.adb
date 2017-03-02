@@ -105,7 +105,6 @@ package body Robbo is
          X := World'First (1);
          loop
             Get (InFile, Char);
-            exit when End_Of_File (InFile);
             if X <= World'Last (1) then
                case Char is
                   when ' ' =>
