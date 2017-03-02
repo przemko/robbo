@@ -21,7 +21,6 @@ procedure Pledge is
 begin
 
    Read_World ("world_1");
-   Print_World;
 
    loop
 
