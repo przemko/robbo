@@ -1,3 +1,8 @@
+-- pledge.adb
+--
+-- Implementacja algorytmu Pledge'a na opuszczenie dowolnego labiryntu.
+--
+
 with Robbo; use Robbo;
 
 procedure Pledge is

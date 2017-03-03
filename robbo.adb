@@ -10,7 +10,7 @@ package body Robbo is
    Curr_Y : Integer := 0;
    Curr_D : Direction := North;
 
-   World : array (-10 .. 10, -10 .. 10) of Item_Type :=
+   World : array (-39 .. 39, -10 .. 10) of Item_Type :=
      (others => (others => Empty));
 
    procedure Go is
