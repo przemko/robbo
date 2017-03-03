@@ -12,6 +12,6 @@ package Robbo is
 
    procedure Print_World;
 
-   procedure Read_World (File_Name : String);
-
+   procedure Read_World;
+   
 end Robbo;

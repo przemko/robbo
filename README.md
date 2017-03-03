@@ -13,7 +13,7 @@ W pliku `world_1` znajduje się przykładowy świat (`#` oznacza ścianę, ` ` p
 
 Uruchom polecenie:
 
-    $ ./pledge
+    $ ./pledge < plik_ze_światemd
 
 ## Usunięcie zbędnych plików
 

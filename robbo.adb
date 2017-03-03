@@ -87,9 +87,8 @@ package body Robbo is
       end loop;
    end Print_World;
 
-   procedure Read_World (File_Name : String) is
+   procedure Read_World is
 
-      InFile : Ada.Text_IO.File_Type;
       X : Integer;
       Y : Integer;
       Char : Character;
@@ -99,12 +98,11 @@ package body Robbo is
       Curr_Y := 0;
       Curr_D := North;
       World := (others => (others => Empty));
-      Open (InFile, In_File, File_Name);
       Y := World'Last (2);
       loop
          X := World'First (1);
          loop
-            Get (InFile, Char);
+            Get (Char);
             if X <= World'Last (1) then
                case Char is
                   when ' ' =>
@@ -126,14 +124,13 @@ package body Robbo is
                      World (X, Y) := Empty;
                end case;
             end if;
-            exit when End_Of_Line (InFile);
+            exit when End_Of_Line;
             X := X + 1;
          end loop;
-         exit when End_Of_File (InFile);
+         exit when End_Of_File;
          Y := Y - 1;
          exit when Y < World'First (2);
       end loop;
-      Close (InFile);
    end Read_World;
-
+   
 end Robbo;
